@@ -1,0 +1,22 @@
+import java.util.*;
+import java.io.*;
+
+class Solution{
+    public static void main(String []argh){
+        Scanner in = new Scanner(System.in);
+        
+        int t=in.nextInt(); // t = 2
+        for(int i=0;i<t;i++){
+            int a = in.nextInt(); // 1° loop a = 0   // 2° loop a = 5
+            int b = in.nextInt(); // 1° loop b = 2   // 2° loop b = 3
+            int n = in.nextInt(); // 1° loop n = 10  // 2° loop n = 5
+            
+            for(int j = 0; j < n; j++) {
+                a += Math.pow(2, j) * b; 
+                System.out.print(a + " ");
+            }
+            System.out.println();
+        }
+        in.close();
+    }
+}
